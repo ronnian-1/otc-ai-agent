@@ -1,0 +1,61 @@
+# Local credentials; keep the documented empty example.
+.env
+.env.*
+!.env.example
+/credentials
+/credentials.json
+/id_rsa
+/id_ed25519
+
+# Local Python environments and caches.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated logs, coverage and build outputs.
+*.log
+/logs/
+.coverage
+.coverage.*
+/htmlcov/
+/coverage.xml
+/build/
+/dist/
+*.egg-info/
+
+# Machine-specific editor and OS metadata.
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+
+# Do not ignore app/, tests/, data/, docs/, requirements.txt or all JSON files.
+# Ignoring files does not establish publication or redistribution rights.
+
+# Additional private credentials and generated test outputs.
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
+/credential*/
+/secrets/
+/secrets.json
+/pytest-report*.xml
+/test-results/
+/coverage.json
+/.tox/
+/.nox/
+
+# Common standalone credential and environment files.
+/tokens.json
+/token.json
+/.netrc
+/.pypirc
+/env/
+/ENV/
